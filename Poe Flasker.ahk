@@ -13,10 +13,10 @@ RandomKeyPressDuration(min, max) {
 ; Only activate the hotkey if Path of Exile is the active window
 #IfWinActive ahk_exe PathOfExileSteam.exe
 
-; When the letter E is pressed
-$e::
+; When the letter F is pressed
+$f::
     ; Randomize the sequence of key presses to add unpredictability
-    keys := [3, 4, 5]
+    keys := ["D", "S", "Space"]
     Loop, % keys.MaxIndex() {
         Random, idx, 1, % keys.MaxIndex()
         key := keys[idx]
